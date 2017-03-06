@@ -1,0 +1,74 @@
+Part 1: Discussion Questions
+
+Make a new file and add your answers to the questions below. Push the file to your github repository along with the other solutions.
+
+Recursion
+
+In your own words, what is recursion?
+
+    I simplest terms, recursion is when a function calls itself. Its usefullness comes from its unique ability to systematically decompose a complex set of steps into granular actions that can adapt to whatever number of levels are needed to get down to the base case. I also, in the some cases, can allow for very clean elegant code that would have been quite clumsy in a for loop.
+
+Why is it necessary to have a base case?
+
+    Without a base case the recursion will try to continue on forever, only to be shut down once the maximum number of recursions allowed by the system is hit. 
+
+Graphs
+
+What is a graph?
+How is a graph different from a tree?
+    
+    A tree is a kind of graph, but is a more limited data structure. A tree always starts with a single root and branches out form there, whereas a graph has no real 'start point.' In a grpah it is in fact possible to have completelt separate node-clusters that have no connecitons between eahc other, which could never happen in a tree.
+
+Give an example of something that would be good to model with a graph.
+
+    Social networks, such as Facebook or LinkedIn, and all the layers of relationships that come with it.
+
+Performance of Different Data Structures
+
+Fill in the missing spots in the chart with the correct runtimes. Do this by reasoning through how the data structures work, NOT by looking up the solution. Add-R means add to the right/end/top and Add-L means add to the left/beginning/bottom. There are X’s in the spots where that operation doesn’t make sense for that data structure (for instance, you can’t index a stack, or pop from the end of a queue). We’ve provided the first few answers for you.
+
+Fill in the runtimes for the following actions for the table below:
+
+Data Structure              Index   Search  Add-R   Add-L   Pop-L   Pop-R
+Python List (Array)         O(1)    O(n)    O(1)    O(n)    O(n)    O(1)       
+Linked List                 O(n)    O(n)    O(1)    O(1)    O(1)    O(n)     
+Doubly-Linked List          O(n)    O(n)    O(1)    O(1)    O(1)    O(1)         
+Queue (as Array)            X       X       O(1)    X       O(n)    X
+Queue (as LL or DLL)        X       X       O(1)    X       O(1)    x
+Stack (as Array, LL, or DLL)X       X       O(1)    X       X       o(1)    
+Deque (as DLL)              X       X       O(1)    O(1)    O(1)    O(1)          
+Index: Find an item in the structure when you know its position
+Search: Find an item in the structure when you know its data
+Add(R/L): Set a key in set/dictionary or add node to tree
+Pop(R/L): Remove a key or node
+
+Fill in Runtime and Memory:
+
+The answers for dictionary have been provided; you should fill in the rest:
+
+Data Structure          Get         Add     Delete  Iterate Memory
+Dictionary (Hash Map)   O(1)        O(1)    O(1)    O(n)    medium
+Set (Hash Map)          O(1)        O(1)    O(1)    O(n)    medium         
+Binary Search Tree      O(log n)    O(logn) O(logn) O(n)    little         
+Tree                    O(n)        O(1)    O(logn) O(n)    little
+
+Get: Find an item in the structure
+Add: Set a key in set/dictionary or add node to tree
+Delete: Remove a key or node
+Iterate: Find next item in data structure
+Memory: Relative to data, how much memory is used? (Choices: a little, medium, or a lot)
+
+Sorting
+
+Describe in words how the Bubble Sort algorithm works.
+
+    
+
+Describe in words how the Merge Sort algorithm works.
+
+    
+
+Describe in words how the Quick Sort algorithm works.
+
+    
+
